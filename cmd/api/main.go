@@ -8,6 +8,8 @@ func main() {
 
 	server := server.NewServer()
 
+	println("starting server...")
+
 	err := server.ListenAndServe()
 	if err != nil {
 		panic("cannot start server")
